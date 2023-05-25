@@ -25,7 +25,7 @@ The following instructions are specific to the running of the nnUNet integrated 
 To install, clone the git page and use pip install. Make sure latest version of PyTorch is installed. 
 
 
-          git clone https://github.com/ndipenoch/RETOUCH_Segmention_Challenge.git
+          git clone https://github.com/ndipenoch/nnUnet_RASPP.git
           cd nnUnet_RASPP
           pip install -e .
         
