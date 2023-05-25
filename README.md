@@ -26,7 +26,7 @@ To install, clone the git page and use pip install. Make sure latest version of 
 
 
           git clone https://github.com/ndipenoch/RETOUCH_Segmention_Challenge.git
-          cd Extended_nnUNet
+          cd nnUnet_RASPP
           pip install -e .
         
 
