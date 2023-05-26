@@ -18,7 +18,7 @@ Below a brief guide to using the modified nnUNet framework is presented which is
 Note: The code in this repository is derived from the original nnUNet repository and is identical except for the modification/addition of the following files:  `experiment_planner_residual3DUNet_v21.py`, `conv_blocks.py`, `generic_modular_custom_UNet.py`, `generic_modular_UNet.py`,`nnUNetTrainerV2_ResidualUNet.py`.
 
 
-The following instructions are specific to the running of the nnUNet integrated Residual, Inception, and Dense variations of the UNet. 
+The following instructions are specific to the running of the nnUNet integrated Residual variations of the nnUNet. 
 
 ### Installation
 
