@@ -59,7 +59,7 @@ Run the following depending on which architecture one wishes to experiment train
 ##### Residual UNet:
 For FOLD in [0, 1, 2, 3, 4], run:
 ```bash
-nnUNet_train 3d_fullres nnUNetTrainerV2_ResidualUNet TASK_NAME_OR_ID FOLD -p nnUNetPlans_ResidualUNet_v2.1
+nnUNet_train 3d_fullres CustomTrainerASPPResidual TASK_NAME_OR_ID FOLD --npz
 ```
 
 Note: as discussed in the [original nnUNet repository](https://github.com/MIC-DKFZ/nnUNet), one does not have to run training on all folds for inference to run (running full training on one fold only is sufficient).
@@ -71,10 +71,10 @@ We here concentrate on inference demonstrations using the 3D full-resolution con
 
 Run the following depending on which architecture one wishes to experiment inference with:
 
-##### Residual UNet:
+##### ASPP and Residual UNet:
 
 ```bash
-nnUNet_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -t TASK_NAME_OR_ID -m 3d_fullres -p nnUNetPlans_ResidualUNet_v2.1 -tr nnUNetTrainerV2_ResidualUNet
+nnUNet_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -t TASK_NAME_OR_ID -m 3d_fullres -f [0, 1, 2, 3, 4] --trainer CustomTrainerASPPResidual
 ```
 
 Note: For information on network ensembling refer to [original nnUNet repository](https://github.com/MIC-DKFZ/nnUNet). 
